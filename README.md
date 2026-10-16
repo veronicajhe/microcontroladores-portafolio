@@ -21,4 +21,4 @@ Periodo Lectivo: 2026- 2027
 **Dudas para la clase: **
 ## PRACTICAS 
 - PRACTICA01_LED
-
+. SIMULACION WOKWI https://wokwi.com/projects/478057001648408577
