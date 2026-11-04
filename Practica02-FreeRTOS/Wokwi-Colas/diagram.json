@@ -1,0 +1,61 @@
+
+{
+  "version": 1,
+  "author": "Practica 02 - FreeRTOS",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 10,
+      "left": 250,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_rojo",
+      "top": 40,
+      "left": 20,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_verde",
+      "top": 160,
+      "left": 20,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 75,
+      "left": 110,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 195,
+      "left": 110,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    ["esp:D25", "r1:2", "red", []],
+    ["r1:1", "led_rojo:A", "red", []],
+    ["led_rojo:C", "esp:GND.1", "black", []],
+
+    ["esp:D26", "r2:2", "green", []],
+    ["r2:1", "led_verde:A", "green", []],
+    ["led_verde:C", "esp:GND.1", "black", []]
+  ],
+  "dependencies": {}
+}
